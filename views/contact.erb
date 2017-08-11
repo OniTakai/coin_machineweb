@@ -1,0 +1,42 @@
+<!DOCtype HTML5>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+<html lang ="en">
+
+
+<header>
+	<meta charset="utf-8">
+	<title>Coin Machine Website</title>
+	<meta name="description" content="Coin Machine Website">
+	<meta name="author" content="Minedminds">
+<h1><i><b>Coin Machine Results!!!</b></i></h1>
+	
+
+<ul>
+  <li><a href="index">Home</a></li>
+  <li><a href="money_pics">History of Money</a></li>
+  <li><a href="top_world">Pictures of money</a></li>
+  <li><a href="">How to make money</a></li>
+  
+</ul>
+</header>
+<script type="text/javascript">
+ function enter(elem){
+     elem.style.backgroundColor = '#FFFFFF';
+ }
+ function leave(elem){
+     elem.style.backgroundColor = 'rgba(255, 255,255,0.6)';
+ }
+</script>
+</style>
+
+<body>
+
+<div id="con1" name= "con1" title="results" onmouseover="enter(this)" onmouseout="leave(this)">
+<b>This is your change</b><br>
+<%= coins%><br>
+</div>
+</body>
+</html>

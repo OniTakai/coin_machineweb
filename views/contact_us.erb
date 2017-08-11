@@ -1,0 +1,60 @@
+<!DOCtype HTML5>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+<html lang ="en">
+
+
+<header>
+	<meta charset="utf-8">
+	<title>Coin Results</title>
+	<meta name="description" content="Coin Results">
+	<meta name="author" content="Minedminds">
+<h1><i><b>Coin Results</b></i></h1>
+	
+
+<ul>
+  <li><a href="index">Home</a></li>
+  <li><a href="History of Money">History of Money</a></li>
+  <li><a href="Pictures of Money">Pictures of money</a></li>
+  <li><a href="How to make Money">How to make money</a></li>
+</ul>
+</header>
+</script>
+</style>
+
+<body>
+
+<div id="con1" name= "con1" title="results" onmouseover="enter(this)" onmouseout="leave(this)">
+
+<%= coins%><br>
+
+<script type="text/javascript">
+  var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
+  if (minutes < 10) {
+   minutes = "0" + minutes;
+  }
+  var suffix = "AM";
+  if (hours >= 12) {
+    suffix = "PM";
+    hours = hours - 12;
+  }
+  if (hours == 0) {
+   hours = 12;
+  }
+  document.write(hours + ":" + minutes + suffix + "   ")
+</script> 
+<script type="text/javascript">
+  var currentDate = new Date(),
+      day = currentDate.getDate(),
+      month = currentDate.getMonth() + 1,
+      year = currentDate.getFullYear();
+  document.write(day + "/" + month + "/" + year)
+</script>
+
+</div>
+</body>
+</html>
